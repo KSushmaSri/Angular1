@@ -1,0 +1,13 @@
+<!-- <input type="text" #myinput>
+<button (click)="onsubmit(myinput.value)">Submit</button>
+<input type="text" [(ngModel)]="name">
+{{name}} -->
+<form (ngSubmit)="onsubmit()">
+<input type="text" name="firstName" placeholder="FirstName" [(ngModel)]="register.firstName">
+<input type="text" name="lastName" placeholder="lastName" [(ngModel)]="register.lastName">
+<input type="text" name="userName" placeholder="username" [(ngModel)]="register.userName"> 
+<input type="email" name="email" placeholder="email" [(ngModel)]="register.email">
+<input type="password" name="password" placeholder="password" [(ngModel)]="register.password">
+<input type="text" name="phoneNumber" placeholder="phonenumber" [(ngModel)]="register.phoneNumber">
+<input type="submit">
+</form>
